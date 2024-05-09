@@ -1,4 +1,4 @@
-import { Directive, OnDestroy, OnInit } from '@angular/core';
+import { Component, Directive, OnDestroy, OnInit } from '@angular/core';
 import { interval, Subject, takeUntil } from 'rxjs';
 
 @Directive()
@@ -19,4 +19,11 @@ export class CxTemplateDirective implements OnInit, OnDestroy {
     this.unsub$.next();
     this.unsub$.complete();
   }
+}
+@Component({
+  selector: 'cx-temp',
+  templateUrl: 'cx-template.component.html'
+})
+export class CxTemplateComponent extends CxTemplateDirective {
+
 }

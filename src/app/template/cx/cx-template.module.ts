@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CxTemplateComponent } from './cx-template.component';
 import { DatePipe } from '@angular/common';
+import { CxTemplateComponent } from './cx-template.directive';
 
 @NgModule({
   declarations: [CxTemplateComponent],
